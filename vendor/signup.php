@@ -9,10 +9,11 @@
     $email = $_POST['email'];
     $password = $_POST['password'];
     $password_confirm = $_POST['password_confirm'];
+    $check = $_POST['check'];
 
-  if ($password === $password_confirm) {
-    //con...
-  
+    if ($password === $password_confirm && $check == "Yes") {
+      //con...
+      
     mysqli_query($connect, "INSERT INTO `user` (`id`, `surname`, `name`, `patronymic`, `login`, `email`, `password`) 
        VALUES (NULL, '$surname', '$name', '$patronymic', '$login', '$email', '$password')");
         $_SESSION['message'] = 'Регистрация прошла успешно';
