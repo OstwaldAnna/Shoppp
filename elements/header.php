@@ -17,6 +17,7 @@
                 echo "<li><a href=\"./allorders.php\" class=\"nav-link px-2 text-white\">ВСЕ Заказы</a></li>";
               }else{
                 echo "<li><a href=\"./myorders.php\" class=\"nav-link px-2 text-white\">Мои Заказы</a></li>";
+                echo "<a href=\"./profile.php\" class=\"nav-link px-2 text-white\">Профиль</a></li>";
               }
             }
           ?>
@@ -31,6 +32,7 @@
             echo "<div class=\"text-end\">
                     <p class=\"fw-bold\">" . $_SESSION['user']['login'] . "</p>
                     <a href=\"./basket.php\" class=\"btn btn-outline-light me-2\">Корзина</a>
+                    
                     <a href=\"./vendor/logout.php\" class=\"btn btn-warning\">Выйти</a>
                   </div>";
           }

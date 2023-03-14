@@ -32,11 +32,11 @@ CREATE TABLE `orders` (
   `id_user` int NOT NULL,
   `name` varchar(150) NOT NULL,
   `email` varchar(150) NOT NULL,
-  `phone` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `phone` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `date` date NOT NULL,
   `status` text NOT NULL,
   `products_info` varchar(250) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `orders`
@@ -59,7 +59,7 @@ CREATE TABLE `products` (
   `price` int NOT NULL,
   `image` varchar(100) NOT NULL,
   `country` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `products`
@@ -81,13 +81,13 @@ INSERT INTO `products` (`id`, `name`, `about`, `price`, `image`, `country`) VALU
 
 CREATE TABLE `user` (
   `id` int NOT NULL,
-  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `surname` varchar(100) NOT NULL,
   `patronymic` varchar(100) NOT NULL,
   `login` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Дамп данных таблицы `user`
